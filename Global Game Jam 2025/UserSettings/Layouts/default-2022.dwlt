@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349.3334
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -164,8 +164,8 @@ MonoBehaviour:
     y: 0
     width: 273.33334
     height: 1299.3334
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -414,9 +414,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 84e4ffff
-      m_LastClickedID: -7036
-      m_ExpandedIDs: 12fbffff
+      m_SelectedIDs: a8610000
+      m_LastClickedID: 25000
+      m_ExpandedIDs: f6faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1229,9 +1229,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7a600000
-    m_LastClickedID: 24698
-    m_ExpandedIDs: 000000006660000000ca9a3b
+    m_SelectedIDs: 02620000
+    m_LastClickedID: 25090
+    m_ExpandedIDs: 00000000ee61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1259,7 +1259,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066600000
+    m_ExpandedIDs: 00000000ee610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1286,7 +1286,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300006e63000038650000000000008a6100000eb3000018b300003ca3000084aa000070610000e66a0000f86a0000fe690000e26b0000da6a0000386b00003c6b000040130100444d010090bd01003c890000328900007c6a0000906b0000946b0000986b00009c6b0000a06b0000a46b0000a86b0000ac6b0000b06b0000b46b0000b86b0000bc6b0000c06b0000c46b0000c86b000082780000867800008a7800008e78000092780000967800009a7800009e780000a2780000a6780000aa780000ae780000b2780000b6780000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1385,7 +1385,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -2306
+  m_LastSelectedObjectID: 25000
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52

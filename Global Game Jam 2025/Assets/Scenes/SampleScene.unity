@@ -702,3 +702,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Power: 5
+  moveSpeed: 10
+  screenBounds: 8
