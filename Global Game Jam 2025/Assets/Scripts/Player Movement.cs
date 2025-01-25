@@ -7,6 +7,11 @@ using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
+
+    public Animator animator;
+    public SpriteRenderer spriteRenderer1;
+    public SpriteRenderer spriteRenderer2;
+
     [SerializeField] private int Power;
 
     public float moveSpeed = 10f;  
@@ -42,7 +47,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (currentBubbleValue <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            animator.SetBool("isDead", true);
+
+            spriteRenderer1.enabled = true;
+            spriteRenderer2.enabled = false;
+
+            Invoke("ResetScene", 0.5f);
         }
 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -60,5 +70,11 @@ public class PlayerMovement : MonoBehaviour
         currentBubbleValue += refillAmount;
         currentBubbleValue = Mathf.Clamp(currentBubbleValue, 0, maxBubbleValue);
         bubbleMeter.value = currentBubbleValue;
+    }
+
+    void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        spriteRenderer1.enabled= false;
     }
 }
