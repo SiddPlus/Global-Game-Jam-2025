@@ -18,6 +18,7 @@ public class Obstacles : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
         nextWayPoint = wayPoints[wayPointIndex];
     }
 
