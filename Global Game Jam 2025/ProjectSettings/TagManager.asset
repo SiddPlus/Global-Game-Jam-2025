@@ -6,6 +6,7 @@ TagManager:
   tags:
   - End
   - Obstacle
+  - RefillPickUp
   layers:
   - Default
   - TransparentFX

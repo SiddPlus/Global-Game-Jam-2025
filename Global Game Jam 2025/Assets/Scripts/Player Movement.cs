@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,10 +14,18 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 mousePos;
 
+    public Slider bubbleMeter;
+    public float bubbleDecreaseRate = 10f; 
+    public float maxBubbleValue = 100f;
+    private float currentBubbleValue;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        currentBubbleValue = maxBubbleValue;
+        bubbleMeter.maxValue = maxBubbleValue;
+        bubbleMeter.value = currentBubbleValue;
     }
 
     
@@ -24,6 +34,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             rb.velocity = new Vector2(rb.velocity.x, Power);
+
+            currentBubbleValue -= bubbleDecreaseRate;
+            currentBubbleValue = Mathf.Clamp(currentBubbleValue, 0, maxBubbleValue);
+            bubbleMeter.value = currentBubbleValue;
+        }
+
+        if (currentBubbleValue <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -34,5 +53,12 @@ public class PlayerMovement : MonoBehaviour
 
         float clampedX = Mathf.Clamp(transform.position.x, -screenBounds, screenBounds);
         transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
+    }
+
+    public void RefillMeter(float refillAmount)
+    {
+        currentBubbleValue += refillAmount;
+        currentBubbleValue = Mathf.Clamp(currentBubbleValue, 0, maxBubbleValue);
+        bubbleMeter.value = currentBubbleValue;
     }
 }
