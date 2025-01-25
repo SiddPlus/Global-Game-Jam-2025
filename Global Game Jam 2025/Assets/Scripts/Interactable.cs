@@ -18,7 +18,12 @@ public class Interactable : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            player.animator.SetBool("isDead", true);
+
+            player.spriteRenderer1.enabled = true;
+            player.spriteRenderer2.enabled = false;
+
+            Invoke("ResetScene", 0.5f);
         }
 
         if (other.CompareTag("RefillPickUp"))
@@ -30,5 +35,11 @@ public class Interactable : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
+    }
+
+    void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        player.spriteRenderer1.enabled = false;
     }
 }
