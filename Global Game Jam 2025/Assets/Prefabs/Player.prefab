@@ -118,7 +118,7 @@ MonoBehaviour:
   spriteRenderer2: {fileID: 0}
   source: {fileID: 843219864578437855}
   clip: {fileID: 8300000, guid: 360042deef717cf47aea2ba26985d58a, type: 3}
-  Power: 5
+  Power: 6
   moveSpeed: 10
   screenBounds: 8
   bubbleMeter: {fileID: 0}
