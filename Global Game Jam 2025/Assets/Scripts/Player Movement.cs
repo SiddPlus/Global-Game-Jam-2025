@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer spriteRenderer1;
     public SpriteRenderer spriteRenderer2;
 
+    public AudioSource source;
+    public AudioClip clip;
+
     [SerializeField] private int Power;
 
     public float moveSpeed = 10f;  
@@ -51,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
             spriteRenderer1.enabled = true;
             spriteRenderer2.enabled = false;
+            source.PlayOneShot(clip);
 
             Invoke("ResetScene", 0.5f);
         }
