@@ -334,3 +334,56 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 282.254519 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(50237fe8d521e22419a1ebe1a6bd528a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(50237fe8d521e22419a1ebe1a6bd528a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24170500279d414415f395ee3e3b2d4f') in 0.001519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 30.530301 seconds.
+  path: Assets/Scenes/Level2.unity
+  artifactKey: Guid(1287a43a1fcd41c4db5f0684c3192635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level2.unity using Guid(1287a43a1fcd41c4db5f0684c3192635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62503ebbdcfbe5601f7deb497f9caf4a') in 0.000559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 30.948024 seconds.
+  path: Assets/Scenes/Level3.unity
+  artifactKey: Guid(446f2ed52754f2b4a8932522aa92d022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level3.unity using Guid(446f2ed52754f2b4a8932522aa92d022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcc35ccba3988c5068bbe2348bab604') in 0.000464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 23.830128 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(cd3a1c9d7f8993f4195dc14c200a877e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(cd3a1c9d7f8993f4195dc14c200a877e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06fa352e0f78ff708fd24ecd2403400') in 0.000547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8 unused Assets / (269.9 KB). Loaded Objects now: 4658.
+Memory consumption went from 82.2 MB to 81.9 MB.
+Total: 3.335700 ms (FindLiveObjects: 0.264500 ms CreateObjectMapping: 0.105000 ms MarkObjects: 2.783500 ms  DeleteObjects: 0.181900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
